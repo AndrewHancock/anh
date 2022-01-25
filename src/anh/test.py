@@ -1,5 +1,5 @@
 def spleen():
-    print('Spleen''d!')
+    print('Spleen\'d!')
 
 
 spleen()

@@ -1,7 +1,9 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class Weapon:
+class Weapon(BaseModel):
     name: str
+    range: int
+    damage: int
+    penetration: int
 

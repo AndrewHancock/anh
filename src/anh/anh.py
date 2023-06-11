@@ -1,6 +1,7 @@
 import os
 from os.path import exists, join
 import click
+from anh.cred import cred
 
 
 @click.group()
@@ -21,3 +22,5 @@ def init():
 @anh.command()
 def test():
     print("Hello!")
+
+anh.add_command(cred)

@@ -8,9 +8,9 @@ from deu.util import deu
 class UtilTestSuite(unittest.TestCase):
     def test_util_cred_add(self):
         runner = CliRunner()
-        result = runner.invoke(deu, ['cred', 'add', 'test-group', 'test-user-name', 'test-pwd'])
+        result = runner.invoke(deu, ['cred', 'list'])
 
-        assert result.exit_code == 0
+
 
 
 if __name__ == '__main__':

@@ -31,10 +31,10 @@ def cred(repo: Repo):
 
 @cred.command()
 @click.option('--key', required=True)
-@click.argument('--user-name', required=True)
+@click.option('--user-name', required=True)
 @click.password_option()
-@click.pass_context
 @pass_repo
+@click.pass_context
 def add(ctx, repo, key, user_name, password):
     if _get_cred_entry(repo, key):
         ctx.fail(f"Entry already exists for {key}")
